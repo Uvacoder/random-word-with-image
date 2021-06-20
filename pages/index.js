@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-indigo-100 flex h-screen items-center justify-center px-16">
+    <div className="bg-indigo-100 flex h-screen w-screen items-center justify-center px-16">
       <Head>
         <title>Random words</title>
         <meta
@@ -38,9 +38,9 @@ export default function Home() {
       </Head>
 
       <div className="relative w-full max-w-lg">
-        <div className="absolute top-0 -left-10 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
-        <div className="absolute top-0 -right-10 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
-        <div className="absolute left-20 -bottom-12 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-0 -left-5 md:-left-10 w-32 h-32 md:w-96 md:h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob"></div>
+        <div className="absolute top-0 -right-5 md:-right-10 w-32 h-32 md:w-96 md:h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-2000"></div>
+        <div className="absolute left-20 md:-bottom-12 w-32 h-32 md:w-96 md:h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
         <div className="backdrop-filter justify-between backdrop-blur-2xl bg-white bg-opacity-25 shadow-xl rounded-xl relative  flex flex-col m-5 w-11/12 h-[70vh] items-center cursor-pointer">
           {loading ? (
             <div className="loading"></div>
@@ -56,7 +56,7 @@ export default function Home() {
                   className="rounded-t-xl"
                 />
               )}
-              <p>
+              <p className="text-center">
                 Captured by
                 <a
                   target="blank"
