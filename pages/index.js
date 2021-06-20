@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Home() {
   const [word, setword] = useState(randomWords());
   const [image, setImage] = useState();
-  const [showWord, setShowWord] = useState("GET A WORD");
+  const [showWord, setShowWord] = useState("GET A WORD BY CLICKING ME");
   const [loading, setLoading] = useState(true);
 
   const fetchImage = async () => {
