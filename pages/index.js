@@ -4,7 +4,7 @@ import randomWords from "random-words";
 import { useState } from "react";
 
 export default function Home() {
-  const [word, setword] = useState(randomWords());
+  const [word, setWord] = useState(randomWords);
   const [image, setImage] = useState();
   const [showWord, setShowWord] = useState("GET A WORD BY CLICKING ME");
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   const handleClick = () => {
-    setword(randomWords());
+    setWord(randomWords());
     fetchImage();
     console.log(image);
     setLoading(true);
