@@ -43,7 +43,7 @@ export default function Home() {
         <div className="absolute left-20 md:-bottom-12 w-32 h-32 md:w-96 md:h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
         <div className="backdrop-filter justify-between backdrop-blur-2xl bg-white bg-opacity-25 shadow-xl rounded-xl relative  flex flex-col m-5 w-11/12 h-[70vh] items-center cursor-pointer">
           {loading ? (
-            <div className="loading"></div>
+            <div className="loading rounded-t-xl"></div>
           ) : (
             <div className="flex flex-col items-center justify-center">
               {image?.results && (
