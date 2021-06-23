@@ -60,7 +60,7 @@ export default function Home() {
                 Captured by
                 <a
                   target="blank"
-                  href={image.results[0].user.links.html}
+                  href={`${image.results[0].user.links.html}?utm_source=your_app_name&utm_medium=referral`}
                   className="border-b-2 mx-1 border-black"
                 >
                   {image.results[0].user.name}
@@ -68,7 +68,7 @@ export default function Home() {
                 on
                 <a
                   target="blank"
-                  href={image.results[0].links.html}
+                  href="https://unsplash.com/?utm_source=random-words&utm_medium=referral"
                   className="border-b-2 mx-1 border-black"
                 >
                   Unsplash
