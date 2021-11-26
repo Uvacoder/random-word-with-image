@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import GitHubBadge from "../components/GitHubBadge";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="absolute w-32 h-32 bg-pink-300 rounded-full left-20 md:-bottom-12 md:w-96 md:h-96 mix-blend-multiply filter blur-lg opacity-90 animate-blob animation-delay-4000"></div>
         <Card />
       </div>
+      <GitHubBadge />
     </div>
   );
 }
