@@ -6,6 +6,16 @@ Click on fork in the top left corner of your screen. Clone the repo you have bee
 git clone <your_username>/portfolio-template
 ```
 
+### Adding env
+
+You need to get your Unsplash API key. You can do this by following the instructions on the [Unsplash API page](https://unsplash.com/documentation#registering-your-application).
+
+Create a `.env.local` file and paste the following-
+
+```
+UNSPLASH_API_KEY=<your_unsplash_access_key>
+```
+
 ### Installing dependencies
 
 ```bash
